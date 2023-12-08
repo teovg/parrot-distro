@@ -4,11 +4,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-#border colors
 bspc config border_width         2
 bspc config window_gap          12
-bspc config normal_border_color "#FFFFFF"
-bspc config focused_border_color "#00acc1"
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -20,8 +17,16 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 vmware-user-suid-wrapper &
-feh --bg-fill /home/teo/Desktop/teo/fondos/cielogod.png	
-~/.config/polybar/./launch.sh --shapes &
+feh --bg-fill /home/teo/Desktop/teo/fondos/fondo1.png &
+~/.config/polybar/./launch.sh &
 picom &
 wmname LG3D &
-xrandr --output Virtual1 --mode 1920x1080 --rate 144
+xrandr --output Virtual1 --mode 1920x1080 &
+
+
+
+
+
+
+
+
